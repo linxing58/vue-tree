@@ -77,17 +77,17 @@
         },
 
         methods:{
-            addAChild(id){
-                this.$emit('add-a-child', id)
+            addAChild(model){
+                this.$emit('add-a-child', model)
             },
-            itemClick(id){
-                this.$emit('item-click', id)
+            itemClick(model){
+                this.$emit('item-click', model)
             },
-            itemEdit(id) {
-                this.$emit('item-edit', id)
+            itemEdit(model) {
+                this.$emit('item-edit', model)
             },
-            itemDelete(id) {
-                this.$emit('item-delete', id)
+            itemDelete(model) {
+                this.$emit('item-delete', model)
             },
             initOptions () {
                 this.termOptions = Object.assign({}, this.defaultOptions, this.options);

@@ -163,35 +163,35 @@
             },
 
             itemClick() {
-                this.emitItemClick(this.model.id)
+                this.emitItemClick(this.model)
             },
 
             addChild() {
-                this.emitAddChild(this.model.id)
+                this.emitAddChild(this.model)
             },
 
             itemEdit() {
-                this.emitItemEdit(this.model.id)
+                this.emitItemEdit(this.model)
             },
 
             itemDelete() {
-                this.emitItemDelete(this.model.id)
+                this.emitItemDelete(this.model)
             },
 
-            emitItemClick(id) {
-                this.$emit('item-click', id)
+            emitItemClick(model) {
+                this.$emit('item-click', model)
             },
 
-            emitItemEdit(id) {
-                this.$emit('item-edit', id)
+            emitItemEdit(model) {
+                this.$emit('item-edit', model)
             },
 
-            emitItemDelete(id) {
-                this.$emit('item-delete', id)
+            emitItemDelete(model) {
+                this.$emit('item-delete', model)
             },
 
-            emitAddChild(id) {
-                this.$emit('add-a-child', id)
+            emitAddChild(model) {
+                this.$emit('add-a-child', model)
             },
 
             toggleChecked() {
